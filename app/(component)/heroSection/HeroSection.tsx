@@ -8,7 +8,7 @@ export default async function HeroSection() {
   return (
     <>
       <div className="bg-pink-50 mt-20">
-        <div className="flex justify-center pt-20 text-5xl text-orange-600 mx-10">
+        <div className="flex justify-center  pt-20 text-5xl text-orange-600 mx-10  cursor-pointer">
           <h1>{response.data.hero_title}</h1>
         </div>
 

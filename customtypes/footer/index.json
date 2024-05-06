@@ -1,0 +1,122 @@
+{
+  "format": "page",
+  "id": "footer",
+  "label": "footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "footer_text1": {
+        "type": "Text",
+        "config": {
+          "label": "Footer_Text1",
+          "placeholder": ""
+        }
+      },
+      "footer_text2": {
+        "type": "Text",
+        "config": {
+          "label": "Footer_Text2",
+          "placeholder": ""
+        }
+      },
+      "footer_text3": {
+        "type": "Text",
+        "config": {
+          "label": "Footer_Text3",
+          "placeholder": ""
+        }
+      },
+      "contact_text": {
+        "type": "Text",
+        "config": {
+          "label": "Contact_Text",
+          "placeholder": ""
+        }
+      },
+      "contact_text1": {
+        "type": "Text",
+        "config": {
+          "label": "Contact_Text1",
+          "placeholder": ""
+        }
+      },
+      "contact_text2": {
+        "type": "Text",
+        "config": {
+          "label": "Contact_Text2",
+          "placeholder": ""
+        }
+      },
+      "contact_text3": {
+        "type": "Text",
+        "config": {
+          "label": "Contact_Text3",
+          "placeholder": ""
+        }
+      },
+      "legal_text": {
+        "type": "Text",
+        "config": {
+          "label": "Legal_text",
+          "placeholder": ""
+        }
+      },
+      "legal_text1": {
+        "type": "Text",
+        "config": {
+          "label": "Legal_Text1",
+          "placeholder": ""
+        }
+      },
+      "legal_text2": {
+        "type": "Text",
+        "config": {
+          "label": "Legal_Text2",
+          "placeholder": ""
+        }
+      },
+      "legal_text3": {
+        "type": "Text",
+        "config": {
+          "label": "Legal_Text3",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}
