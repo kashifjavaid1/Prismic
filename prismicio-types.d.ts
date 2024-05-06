@@ -4,71 +4,319 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type AboutDocumentDataSlicesSlice = never;
+type HeroDocumentDataSlicesSlice = never;
 
 /**
- * Content for about documents
+ * Content for Hero documents
  */
-interface AboutDocumentData {
+interface HeroDocumentData {
   /**
-   * Title field in *about*
+   * Hero_Title field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_title: prismic.KeyTextField;
+
+  /**
+   * Hero_Image_1 field in *Hero*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_image_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image_1: prismic.ImageField<never>;
+
+  /**
+   * Hero_Image_2 field in *Hero*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_image_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image_2: prismic.ImageField<never>;
+
+  /**
+   * Hero_Image_3 field in *Hero*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_image_3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image_3: prismic.ImageField<never>;
+
+  /**
+   * Hero_Image_4 field in *Hero*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_image_4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image_4: prismic.ImageField<never>;
+
+  /**
+   * Hero_Location field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_location
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_location: prismic.KeyTextField;
+
+  /**
+   * Hero_Location_2 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_location_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_location_2: prismic.KeyTextField;
+
+  /**
+   * Hero_Location_3 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_location_3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_location_3: prismic.KeyTextField;
+
+  /**
+   * Hero_Location_4 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_location_4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_location_4: prismic.KeyTextField;
+
+  /**
+   * Hero_Description field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description: prismic.KeyTextField;
+
+  /**
+   * Hero_Description_1 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_description_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description_1: prismic.KeyTextField;
+
+  /**
+   * Hero_Description_3 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_description_3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description_3: prismic.KeyTextField;
+
+  /**
+   * Hero_Description_4 field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.hero_description_4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description_4: prismic.KeyTextField;
+
+  /**
+   * Slice Zone field in *Hero*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<HeroDocumentDataSlicesSlice> /**
+   * Meta Description field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: hero.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Hero*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Hero*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: hero.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Hero document from Prismic
+ *
+ * - **API ID**: `hero`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type HeroDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<Simplify<HeroDocumentData>, "hero", Lang>;
+
+type NavbarDocumentDataSlicesSlice = never;
+
+/**
+ * Content for Navbar documents
+ */
+interface NavbarDocumentData {
+  /**
+   * Navbar_logo_Image field in *Navbar*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.navbar_logo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  navbar_logo: prismic.ImageField<never>;
+
+  /**
+   * Navbar_text_data field in *Navbar*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: about.title
+   * - **API ID Path**: navbar.navbar_text
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  title: prismic.RichTextField;
+  navbar_text: prismic.RichTextField;
 
   /**
-   * image field in *about*
+   * Navbar_text field in *Navbar*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: about.image
+   * - **API ID Path**: navbar.navbar_text1
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  image: prismic.ImageField<never>;
+  navbar_text1: prismic.ImageField<never>;
 
   /**
-   * Slice Zone field in *about*
+   * Hero_Text field in *Navbar*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.hero_text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_text: prismic.KeyTextField;
+
+  /**
+   * Hero_Description field in *Navbar*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.hero_description
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  hero_description: prismic.KeyTextField;
+
+  /**
+   * Hero_Image field in *Navbar*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: navbar.hero_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  hero_image: prismic.ImageField<never>;
+
+  /**
+   * Slice Zone field in *Navbar*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
-   * - **API ID Path**: about.slices[]
+   * - **API ID Path**: navbar.slices[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<AboutDocumentDataSlicesSlice> /**
-   * Meta Description field in *about*
+  slices: prismic.SliceZone<NavbarDocumentDataSlicesSlice> /**
+   * Meta Description field in *Navbar*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: about.meta_description
+   * - **API ID Path**: navbar.meta_description
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */;
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *about*
+   * Meta Image field in *Navbar*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: about.meta_image
+   * - **API ID Path**: navbar.meta_image
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never>;
 
   /**
-   * Meta Title field in *about*
+   * Meta Title field in *Navbar*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: about.meta_title
+   * - **API ID Path**: navbar.meta_title
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -76,93 +324,163 @@ interface AboutDocumentData {
 }
 
 /**
- * about document from Prismic
+ * Navbar document from Prismic
  *
- * - **API ID**: `about`
+ * - **API ID**: `navbar`
  * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type AboutDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<Simplify<AboutDocumentData>, "about", Lang>;
+export type NavbarDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<NavbarDocumentData>,
+    "navbar",
+    Lang
+  >;
 
-type HomeDocumentDataSlicesSlice = never;
+type ProductsDocumentDataSlicesSlice = never;
 
 /**
- * Content for Home documents
+ * Content for Products documents
  */
-interface HomeDocumentData {
+interface ProductsDocumentData {
   /**
-   * Site Tile field in *Home*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: home.site_tile
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  site_tile: prismic.KeyTextField;
-
-  /**
-   * Description field in *Home*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: home.description
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  description: prismic.KeyTextField;
-
-  /**
-   * OG_image field in *Home*
+   * product_1 field in *Products*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.og_image
+   * - **API ID Path**: products.product_1
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#image
    */
-  og_image: prismic.ImageField<never>;
+  product_1: prismic.ImageField<never>;
 
   /**
-   * Slice Zone field in *Home*
+   * product_2 field in *Products*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.product_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  product_2: prismic.ImageField<never>;
+
+  /**
+   * product_3 field in *Products*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.product_3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  product_3: prismic.ImageField<never>;
+
+  /**
+   * product_4 field in *Products*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.product_4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  product_4: prismic.ImageField<never>;
+
+  /**
+   * products_1_Text field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.products_1_Text
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  products_1_Text: prismic.KeyTextField;
+
+  /**
+   * button_product_1 field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.button_product_1
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_product_1: prismic.KeyTextField;
+
+  /**
+   * button_product_2 field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.button_product_2
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_product_2: prismic.KeyTextField;
+
+  /**
+   * button_product_3 field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.button_product_3
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_product_3: prismic.KeyTextField;
+
+  /**
+   * button_product_4 field in *Products*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: products.button_product_4
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_product_4: prismic.KeyTextField;
+
+  /**
+   * Slice Zone field in *Products*
    *
    * - **Field Type**: Slice Zone
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.slices[]
+   * - **API ID Path**: products.slices[]
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
-  slices: prismic.SliceZone<HomeDocumentDataSlicesSlice> /**
-   * Meta Description field in *Home*
+  slices: prismic.SliceZone<ProductsDocumentDataSlicesSlice> /**
+   * Meta Description field in *Products*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: home.meta_description
+   * - **API ID Path**: products.meta_description
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */;
   meta_description: prismic.KeyTextField;
 
   /**
-   * Meta Image field in *Home*
+   * Meta Image field in *Products*
    *
    * - **Field Type**: Image
    * - **Placeholder**: *None*
-   * - **API ID Path**: home.meta_image
+   * - **API ID Path**: products.meta_image
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   meta_image: prismic.ImageField<never>;
 
   /**
-   * Meta Title field in *Home*
+   * Meta Title field in *Products*
    *
    * - **Field Type**: Text
    * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: home.meta_title
+   * - **API ID Path**: products.meta_title
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
@@ -170,18 +488,22 @@ interface HomeDocumentData {
 }
 
 /**
- * Home document from Prismic
+ * Products document from Prismic
  *
- * - **API ID**: `home`
+ * - **API ID**: `products`
  * - **Repeatable**: `false`
  * - **Documentation**: https://prismic.io/docs/custom-types
  *
  * @typeParam Lang - Language API ID of the document.
  */
-export type HomeDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<Simplify<HomeDocumentData>, "home", Lang>;
+export type ProductsDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<ProductsDocumentData>,
+    "products",
+    Lang
+  >;
 
-export type AllDocumentTypes = AboutDocument | HomeDocument;
+export type AllDocumentTypes = HeroDocument | NavbarDocument | ProductsDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -193,12 +515,15 @@ declare module "@prismicio/client" {
 
   namespace Content {
     export type {
-      AboutDocument,
-      AboutDocumentData,
-      AboutDocumentDataSlicesSlice,
-      HomeDocument,
-      HomeDocumentData,
-      HomeDocumentDataSlicesSlice,
+      HeroDocument,
+      HeroDocumentData,
+      HeroDocumentDataSlicesSlice,
+      NavbarDocument,
+      NavbarDocumentData,
+      NavbarDocumentDataSlicesSlice,
+      ProductsDocument,
+      ProductsDocumentData,
+      ProductsDocumentDataSlicesSlice,
       AllDocumentTypes,
     };
   }

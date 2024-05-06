@@ -1,0 +1,140 @@
+{
+  "format": "page",
+  "id": "hero",
+  "label": "Hero",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "hero_title": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Title",
+          "placeholder": ""
+        }
+      },
+      "hero_image_1": {
+        "type": "Image",
+        "config": {
+          "label": "Hero_Image_1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_image_2": {
+        "type": "Image",
+        "config": {
+          "label": "Hero_Image_2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_image_3": {
+        "type": "Image",
+        "config": {
+          "label": "Hero_Image_3",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_image_4": {
+        "type": "Image",
+        "config": {
+          "label": "Hero_Image_4",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_location": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Location",
+          "placeholder": ""
+        }
+      },
+      "hero_location_2": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Location_2",
+          "placeholder": ""
+        }
+      },
+      "hero_location_3": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Location_3",
+          "placeholder": ""
+        }
+      },
+      "hero_location_4": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Location_4",
+          "placeholder": ""
+        }
+      },
+      "hero_description": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Description",
+          "placeholder": ""
+        }
+      },
+      "hero_description_1": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Description_1",
+          "placeholder": ""
+        }
+      },
+      "hero_description_3": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Description_3",
+          "placeholder": ""
+        }
+      },
+      "hero_description_4": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Description_4",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      }
+    }
+  }
+}

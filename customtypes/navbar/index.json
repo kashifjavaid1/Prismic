@@ -1,24 +1,54 @@
 {
   "format": "page",
-  "id": "about",
-  "label": "about",
+  "id": "navbar",
+  "label": "Navbar",
   "repeatable": false,
   "status": true,
   "json": {
     "Main": {
-      "title": {
-        "type": "StructuredText",
-        "config": {
-          "label": "Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "multi": "heading2"
-        }
-      },
-      "image": {
+      "navbar_logo": {
         "type": "Image",
         "config": {
-          "label": "image",
+          "label": "Navbar_logo_Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "navbar_text": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Navbar_text_data",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "navbar_text1": {
+        "type": "Image",
+        "config": {
+          "label": "Navbar_text",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "hero_text": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Text",
+          "placeholder": ""
+        }
+      },
+      "hero_description": {
+        "type": "Text",
+        "config": {
+          "label": "Hero_Description",
+          "placeholder": ""
+        }
+      },
+      "hero_image": {
+        "type": "Image",
+        "config": {
+          "label": "Hero_Image",
           "constraint": {},
           "thumbnails": []
         }
