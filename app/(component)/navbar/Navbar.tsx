@@ -2,7 +2,7 @@ import React from "react";
 import { createClient } from "../../../prismicio";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
-
+import { TypeAnimation } from "react-type-animation";
 export default async function Navbar() {
   const client = await createClient();
   const navbar = await client.getSingle("navbar");

@@ -4,6 +4,7 @@ import { PrismicNextImage } from "@prismicio/next";
 export default async function Products() {
   const client = await createClient();
   const products = await client.getSingle("products");
+
   return (
     <>
       <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 mx-10 mt-12 gap-y-4 cursor-pointer">
