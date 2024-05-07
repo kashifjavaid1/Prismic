@@ -16,8 +16,8 @@ export default async function Products() {
           <h1 className="text-2xl mt-[32px]">
             {products.data.products_1_Text}
           </h1>
-          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3">
-            <h1 className="text-orange-600 text-xl font-bold">
+          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3 hover:bg-pink-500">
+            <h1 className="text-orange-600 hover:text-orange-800 text-xl font-bold">
               {products.data.button_product_1}
             </h1>
           </button>
@@ -31,8 +31,8 @@ export default async function Products() {
           <h1 className="text-2xl mt-[32px]">
             {products.data.products_1_Text}
           </h1>
-          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3">
-            <h1 className="text-orange-600 text-xl font-bold">
+          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3  hover:bg-pink-500">
+            <h1 className="text-orange-600 hover:text-orange-800  text-xl font-bold">
               {products.data.button_product_2}
             </h1>
           </button>
@@ -47,8 +47,8 @@ export default async function Products() {
           <h1 className="text-2xl mt-[32px]">
             {products.data.products_1_Text}
           </h1>
-          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3">
-            <h1 className="text-orange-600 text-xl font-bold">
+          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3  hover:bg-pink-500">
+            <h1 className="text-orange-600 hover:text-orange-800  text-xl font-bold">
               {products.data.button_product_3}
             </h1>
           </button>
@@ -62,8 +62,8 @@ export default async function Products() {
           <h1 className="text-2xl mt-[32px]">
             {products.data.products_1_Text}
           </h1>
-          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3">
-            <h1 className="text-orange-600 text-xl font-bold">
+          <button className="bg-pink-200 rounded-md px-2 py-1 mt-3  hover:bg-pink-500">
+            <h1 className="text-orange-600 hover:text-orange-800  text-xl font-bold">
               {products.data.button_product_4}
             </h1>
           </button>
